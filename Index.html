@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forex Bot V1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Forex Bot V1</h1>
+    <p class="subtitle">Automated Forex Trading Dashboard</p>
+
+    <div class="card status-card">
+        <span>BOT STATUS</span>
+        <strong id="status">STOPPED</strong>
+    </div>
+
+    <div class="card">
+        <h2>MT5 Connection</h2>
+
+        <div id="connection">
+            MT5: Not Connected
+        </div>
+
+        <button id="connect" class="blue">
+            CONNECT DEMO
+        </button>
+    </div>
+
+    <div class="card">
+        <h2>Trading Settings</h2>
+
+        <label>
+            Symbol
+            <input id="symbol" type="text" value="EURUSD">
+        </label>
+
+        <label>
+            Lot Size
+            <input id="lot" type="number" value="0.01" step="0.01">
+        </label>
+
+        <label>
+            Stop Loss
+            <input id="sl" type="number" value="30">
+        </label>
+
+        <label>
+            Take Profit
+            <input id="tp" type="number" value="60">
+        </label>
+
+        <label>
+            Risk %
+            <input id="risk" type="number" value="1" step="0.1">
+        </label>
+    </div>
+
+    <div class="card">
+        <h2>Account</h2>
+
+        <div class="row">
+            <span>Balance</span>
+            <strong id="balance">$10,000.00</strong>
+        </div>
+
+        <div class="row">
+            <span>Daily P/L</span>
+            <strong id="pnl">$0.00</strong>
+        </div>
+    </div>
+
+    <div class="buttons">
+
+        <button id="start" class="green">
+            START BOT
+        </button>
+
+        <button id="stop" class="gray">
+            STOP BOT
+        </button>
+
+        <button id="emergency" class="red">
+            EMERGENCY STOP
+        </button>
+
+    </div>
+
+    <div class="card">
+        <h2>Activity</h2>
+
+        <div id="log">
+            Forex Bot V1 ready.
+        </div>
+    </div>
+
+    <p class="warning">
+        DEMO MODE — No real trades are being placed.
+    </p>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
